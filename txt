@@ -1,0 +1,33 @@
+@media only screen and {max-width: 375px;
+            .container{
+                grid-template-columns: auto auto
+            }
+            main{
+                background-color: rgb(4, 0, 255);
+            }
+            }
+            @media print{
+                p{
+                    font-size: 12em;
+                    color: aquamarine;
+                }
+____________________________________________________________________________________________________________________________
+/*ipad*/
+        @media only screen and (max-width:832;){
+            .container{
+                grid-template-columns: repeat(4, 25%);
+                grid-template-rows:6.66% 26.64% 33.3% 13.32% 19.98%;
+            }
+            nav, header, main, aside, footer{ grid-column: 1 / 5 ;
+
+            }
+        }
+        /*iphone*/
+        @media only screen and (max-width:375){
+            .container{
+                grid-template-columns: auto auto;
+                grid-template-rows:10% 20% 40% 10% 20%;
+            }
+            nav, header, main, aside, footer{ grid-column: 1 / 3 ;
+
+            }
